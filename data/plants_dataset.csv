@@ -1,0 +1,161 @@
+name,type,temperature,humidity,precip,soil
+Salt Wattle,Tree,['Moderate'],"['Very Low', 'Low']",['Low'],"['Saline', 'Clay-Loam']"
+Cuthbertson's Wattle,Shrub,['Low'],"['Very Low', 'Low']",['Low'],"['Sandy', 'Calcareous']"
+Salam Acacia,Tree,['Low'],['Very Low'],['Low'],"['Sandy', 'Calcareous']"
+Arad Acacia,Tree,['Moderate'],"['Very Low', 'Low']",['Low'],"['Calcareous', 'Sandy']"
+Sweet Acacia,Tree,['Low'],"['Very Low', 'Low']",['Low'],['Sandy']
+Grey-haired Acacia,Tree,['Very Low'],['Very Low'],['Low'],"['Sandy', 'Calcareous']"
+Sweet Thorn,Tree,['Moderate'],['Very Low'],['Low'],['Sandy']
+Umbrella Wattle,Shrub,['Very Low'],"['Very Low', 'Low', 'Moderate']",['Low'],"['Sandy', 'Calcareous']"
+Gum Arabic Tree,Tree,['Moderate'],['Very Low'],"['Low', 'Moderate']","['Sandy', 'Calcareous']"
+Golden Acacia,Tree,['Very Low'],"['Very Low', 'Low']",['Low'],"['Sandy', 'Calcareous']"
+Willow Acacia,Tree,['Moderate'],"['Very Low', 'Low']",['Low'],"['Calcareous', 'Clay-Loam']"
+Blue-leafed Wattle,Tree,['Moderate'],['Very Low'],['Low'],['Sandy']
+Twisted Acacia,Tree,['Low'],"['Very Low', 'Low', 'Moderate']",['Low'],"['Sandy', 'Calcareous']"
+Umbrella Thorn,Tree,['Very Low'],"['Very Low', 'Low', 'Moderate']",['Low'],['Calcareous']
+Bramble Wattle,Shrub,['Low'],"['Low', 'Moderate']",['Low'],"['Calcareous', 'Saline', 'Clay-Loam']"
+Chenille Plant,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Copper Leaf,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],['Sandy']
+Desert Rose,Succulent Shrub,['Moderate'],"['Very Low', 'Low']",['Low'],['Sandy']
+Century Plant,Succulent Plant,['Low'],"['Very Low', 'Low']",['Moderate'],"['Sandy', 'Saline']"
+Variegated Caribbean Agave,Succulent Plant,['Moderate'],"['Very Low', 'Low']",['Moderate'],['Sandy']
+Dragon-Tree Agave,Succulent Plant,['Moderate'],"['Very Low', 'Low', 'Moderate']",['Moderate'],['Sandy']
+Smooth-Edged Agave,Succulent Plant,['Moderate'],"['Very Low', 'Low']",['Low'],['Sandy']
+Woman's Tongue,Tree,['Moderate'],"['Low', 'Moderate']",['High'],"['Sandy', 'Clay-Loam']"
+Hollyhock,Herbaceous perennial,['Very Low'],"['Low', 'Moderate']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Golden Trumpet Vine,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Elephant's Ear,Herbaceous perennial,['High'],"['High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Giant Aloe,Succulent Shrub,['Moderate'],"['Very Low', 'Low']",['Low'],"['Sandy', 'Calcareous']"
+Medicinal Aloe,Succulent Shrub,['Moderate'],"['Very Low', 'Low']",['Low'],"['Sandy', 'Calcareous']"
+Parrot Leaf,Herbaceous perennial,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Joseph's Coat,Herbaceous perennial,['Moderate'],"['Low', 'High']",['Low'],"['Sandy', 'Clay-Loam']"
+Queen's Wreath,Elegant Plant,['Moderate'],"['Low', 'Moderate', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Snapdragon,Herbaceous perennial,['Moderate'],"['Low', 'Moderate']",['High'],"['Sandy', 'Clay-Loam']"
+Baby Sun-Rose,Herbaceous perennial,['Moderate'],"['Very Low', 'Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Calcareous']"
+Hawaiian Baby Woodrose,Shrub,['High'],"['Low', 'Moderate']",['Moderate'],['Sandy']
+Elephant Vine,Elegant Plant,['Moderate'],"['Low', 'Moderate']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Giant Cane,Herbaceous perennial,['Very Low'],"['Low', 'High']",['Moderate'],"['Sandy', 'Clay-Loam', 'Saline']"
+Milkweed,Shrub,['Low'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam', 'Saline']"
+Ornamental Asparagus,Succulent Shrub,['Moderate'],"['Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam', 'Saline']"
+Asphodel,Herbaceous perennial,['Very Low'],"['Very Low', 'Low']","['Low', 'Moderate']","['Sandy', 'Calcareous']"
+Shrubby Orache,Shrub,['Moderate'],"['Very Low', 'Low']","['Low', 'Moderate']","['Sandy', 'Saline']"
+Saltbush,Succulent Shrub,['Low'],"['Very Low', 'Low', 'Moderate']","['Low', 'Moderate']","['Saline', 'Clay-Loam', 'Silt-Loam']"
+Neem Tree,Tree,['High'],"['Low', 'Moderate', 'High']","['Moderate', 'High']","['Sandy', 'Clay-Loam']"
+Burning Bush,Herbaceous perennial,['Moderate'],"['Low', 'Moderate']",['High'],"['Sandy', 'Saline', 'Clay-Loam']"
+Butterfly Tree,Tree,['Moderate'],"['Low', 'High']","['Moderate', 'High']",['Sandy']
+Eyelash Plant,Herbaceous perennial,['Moderate'],"['Very Low', 'Low', 'Moderate']","['Low', 'Moderate']","['Sandy', 'Calcareous']"
+Red Silk Cotton,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Bougainvillea,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Bougainvillea,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Australian Flame Tree,Tree,['Moderate'],"['Low', 'Moderate']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Bottle Tree,Tree,['Low'],"['Very Low', 'Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Calcareous', 'Clay-Loam']"
+Snow Bush,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Yellow Bird-of-Paradise Shrub,Shrub,['Low'],"['Low', 'Moderate']",['High'],['Sandy']
+Pride of Barbados,Shrub,['Low'],"['Low', 'Moderate', 'High']",['High'],['Sandy']
+Marigold,Herbaceous perennial,['Moderate'],"['Very Low', 'Low', 'Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Calligonum,Shrub,['Moderate'],"['Very Low', 'Low']","['Low', 'Moderate']","['Sandy', 'Calcareous']"
+Bottle Brush,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Weeping Bottlebrush,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Felt Plant,Shrub,['Moderate'],"['Very Low', 'Low', 'Moderate', 'Low']","['Low', 'Moderate']","['Sandy', 'Silt-Loam']"
+Cape Jasmine,Shrub,['Low'],"['Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Treasure Flower,Herbaceous perennial,['Low'],"['Very Low', 'Low', 'Moderate']",['Moderate'],['Sandy']
+Trailing Gazania,Herbaceous perennial,['Very Low'],"['Low', 'Moderate']",['Moderate'],['Sandy']
+Trailing Gazania,Herbaceous perennial,['Low'],"['Very Low', 'Low', 'Moderate', 'High']",['Moderate'],['Sandy']
+Grevillea,Tree,['Low'],"['Low', 'Moderate']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Saxaul,Shrub,['Low'],"['Very Low', 'Low', 'Moderate']",['Low'],"['Sandy', 'Calcareous']"
+Heliotrope,Succulent Shrub,['Low'],"['Very Low', 'Low', 'Moderate']","['Low', 'Moderate']","['Sandy', 'Calcareous']"
+Chinese Hibiscus,Shrub,['Moderate'],"['Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Seacoast Mallow,Tree,['Moderate'],"['Moderate', 'High', 'Extreme']","['Moderate', 'High']","['Sandy', 'Saline', 'Clay-Loam']"
+Sweet Potato,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Mile-a-Minute Vine,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Beach Morning Glory,Herbaceous perennial,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Calcareous']"
+Bloodleaf,Herbaceous perennial,['Moderate'],"['Low', 'Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Flame of the Woods,Shrub,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Jungle Flame,Shrub,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Mimosa-Leaved Ebony,Tree,['Moderate'],"['Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Jacquemontia,Elegant Plant,"['Moderate', 'High']","['Moderate', 'High']",['Moderate'],['Sandy']
+Poet's Jasmine,Elegant Plant,['Very Low'],"['Low', 'Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Pink Jasmine,Elegant Plant,['Low'],"['Low', 'Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Arabian Jasmine,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Peregrina,Shrub,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],['Sandy']
+Sea Rush,Herbaceous perennial,['Moderate'],"['Moderate', 'High', 'Extreme']",['High'],"['Saline', 'Clay-Loam', 'Silt-Loam']"
+Flaming Katy,Succulent Plant,['Moderate'],"['Low', 'Moderate']",['Low'],['Sandy']
+Devil's Backbone,Succulent Plant,['Moderate'],"['Very Low', 'Low', 'Moderate', 'Low']",['Low'],['Sandy']
+Crape Myrtle,Tree,['Very Low'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Cow-Itch Tree,Tree,['Low'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Saline', 'Clay-Loam']"
+Orange Ice Plant,Succulent Shrub,['Moderate'],"['Very Low', 'Low', 'Moderate', 'High']",['Low'],"['Sandy', 'Calcareous']"
+Yellow Vygie,Succulent Shrub,['Very Low'],"['Low', 'Moderate', 'High']",['Low'],"['Sandy', 'Calcareous']"
+Shrub Verbena,Shrub,['Moderate'],"['Low', 'Moderate', 'High', 'Extreme']",['Moderate'],['Sandy']
+Trailing Lantana,Shrub,"['Moderate', 'High']","['Low', 'Moderate', 'High', 'Extreme']",['High'],['Sandy']
+Indian Beech,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Moricandia,Herbaceous perennial,['Low'],"['Very Low', 'Low', 'Moderate']","['Low', 'Moderate']","['Silt-Loam', 'Calcareous']"
+Horseradish tree,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],['Sandy']
+Black Mulberry,Tree,['Very Low'],"['Low', 'Moderate', 'High']",['Moderate'],"['Calcareous', 'Clay-Loam']"
+Satinwood,Shrub,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Sweet Banana,Herbaceous perennial,['Moderate'],"['High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Dwarf Cavendish,Herbaceous perennial,['Moderate'],"['High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Greek Myrtle,Shrub,['Low'],"['Low', 'Moderate', 'High']",['High'],"['Sandy', 'Calcareous']"
+Sacred Indian Lotus,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Oleander,Shrub,['Low'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam', 'Saline']"
+Cape Blue Water Lily,Elegant Plant,['High'],"['Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Cape Blue Water Lily,Elegant Plant,['High'],"['Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Taily Weed,Shrub,['Low'],"['Very Low', 'Low']","['Low', 'Moderate']","['Sandy', 'Calcareous', 'Silt-Loam']"
+Mock Orange,Shrub,['Very Low'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Painted Nettle,Herbaceous perennial,['Moderate'],"['High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Cape Leadwort,Elegant Plant,['Very Low'],"['Moderate', 'High']",['Moderate'],['Sandy']
+Temple Tree,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['High'],['Sandy']
+Frangipani,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['High'],['Sandy']
+Pickerelweed,Herbaceous perennial,['Very Low'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Rose moss,Herbaceous perennial,['Moderate'],"['Very Low', 'Low', 'Moderate', 'Low']",['Low'],"['Sandy', 'Calcareous']"
+Wingpod Purslane,Herbaceous perennial,['High'],"['Low', 'Moderate', 'High']",['Low'],"['Sandy', 'Calcareous']"
+Porkbush,Succulent Shrub,['Moderate'],"['Very Low', 'Low', 'Moderate']",['Low'],"['Sandy', 'Calcareous']"
+Argentine Mesquite,Tree,['Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']",['Low'],"['Sandy', 'Saline', 'Clay-Loam']"
+Chilean Mesquite,Tree,['Very Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']",['Low'],"['Sandy', 'Saline']"
+Syrian Mesquite,Shrub,['Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']","['Low', 'Moderate']","['Sandy', 'Saline']"
+Arizona Mesquite,Tree,['Very Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']",['Low'],"['Sandy', 'Saline']"
+Purple False Eranthemum,Shrub,['Moderate'],"['Low', 'Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Guava,Tree,['Moderate'],"['Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Fleawort,Succulent Shrub,['Low'],"['Very Low', 'Low']","['Low', 'Moderate']","['Sandy', 'Calcareous']"
+Pomegranate,Tree,['Very Low'],"['Low', 'Moderate', 'High']",['Moderate'],['Sandy']
+Flame Vine,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Rangoon Creeper,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],['Sandy']
+California Pepper Tree,Tree,['Low'],"['High', 'Extreme']",['High'],"['Sandy', 'Calcareous', 'Clay-Loam']"
+Brazilian Pepper Tree,Tree,['Moderate'],"['High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Willow Karee,Tree,['Low'],"['Low', 'Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Shrubby Daisybush,Herbaceous perennial,['Moderate'],"['Very Low', 'Low', 'Moderate', 'High', 'Extreme']",['Moderate'],['Sandy']
+Screw Pine,Elegant Plant,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam', 'Saline']"
+Jerusalem Thorn,Tree,['Low'],"['Low', 'Moderate', 'High']",['Low'],"['Sandy', 'Calcareous']"
+Bahia Grass,Herbaceous perennial,['Low'],"['Low', 'Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Umbrella Plant,Herbaceous perennial,['Low'],"['Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Reed,Herbaceous perennial,['Very Low'],"['Low', 'Moderate']",['High'],"['Sandy', 'Clay-Loam', 'Saline']"
+Aleppo Pine,Tree,['Very Low'],"['Low', 'Moderate']",['Low'],"['Sandy', 'Calcareous']"
+Madras Thorn,Tree,['Moderate'],"['Low', 'Moderate']",['Moderate'],['Sandy']
+Mock Orange,Shrub,['Very Low'],"['Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Painted Nettle,Herbaceous perennial,['Moderate'],"['High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Cape Leadwort,Elegant Plant,['Very Low'],"['Moderate', 'High']",['Moderate'],['Sandy']
+Singapore Plumeria,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['High'],['Sandy']
+Frangipani,Tree,['Moderate'],"['Low', 'Moderate', 'High']",['High'],['Sandy']
+Pickerelweed,Herbaceous perennial,['Very Low'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Rose moss,Herbaceous perennial,['Moderate'],"['Very Low', 'Low', 'Moderate', 'Low']",['Low'],"['Sandy', 'Calcareous']"
+Wingpod Purslane,Herbaceous perennial,['High'],"['Low', 'Moderate', 'High']",['Low'],"['Sandy', 'Calcareous']"
+Porkbush,Succulent Shrub,['Moderate'],"['Very Low', 'Low', 'Moderate']",['Low'],"['Sandy', 'Calcareous']"
+Argentine Mesquite,Tree,['Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']",['Low'],"['Sandy', 'Saline', 'Clay-Loam']"
+Chilean Mesquite,Tree,['Very Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']",['Low'],"['Sandy', 'Saline']"
+Syrian Mesquite,Shrub,['Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']","['Low', 'Moderate']","['Sandy', 'Saline']"
+Arizona Mesquite,Tree,['Very Low'],"['Very Low', 'Low', 'Moderate', 'Low', 'High']",['Low'],"['Sandy', 'Saline']"
+Purple False Eranthemum,Shrub,['Moderate'],"['Low', 'Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Guava,Tree,['Moderate'],"['Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Fleawort,Succulent Shrub,['Low'],"['Very Low', 'Low']","['Low', 'Moderate']","['Sandy', 'Calcareous']"
+Pomegranate,Tree,['Very Low'],"['Low', 'Moderate', 'High']",['Moderate'],['Sandy']
+Flame Vine,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Rangoon Creeper,Elegant Plant,['Moderate'],"['Moderate', 'High', 'Extreme']",['Moderate'],['Sandy']
+California Pepper Tree,Tree,['Low'],"['High', 'Extreme']",['High'],"['Sandy', 'Calcareous', 'Clay-Loam']"
+Brazilian Pepper Tree,Tree,['Moderate'],"['High', 'Extreme']",['High'],"['Sandy', 'Clay-Loam']"
+Willow Karee,Tree,['Low'],"['Low', 'Moderate', 'High', 'Extreme']",['Moderate'],"['Sandy', 'Clay-Loam']"
+Shrubby Daisybush,Herbaceous perennial,['Moderate'],"['Very Low', 'Low', 'Moderate', 'High', 'Extreme']",['Moderate'],['Sandy']
+Screw Pine,Elegant Plant,['Moderate'],"['Low', 'Moderate', 'High']",['Moderate'],"['Sandy', 'Clay-Loam', 'Saline']"
+Jerusalem Thorn,Tree,['Low'],"['Low', 'Moderate', 'High']",['Low'],"['Sandy', 'Calcareous']"
+Bahia Grass,Herbaceous perennial,['Low'],"['Low', 'Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Umbrella Plant,Herbaceous perennial,['Low'],"['Moderate', 'High']",['High'],"['Sandy', 'Clay-Loam']"
+Reed,Herbaceous perennial,['Very Low'],"['Low', 'Moderate']",['High'],"['Sandy', 'Clay-Loam', 'Saline']"
+Aleppo Pine,Tree,['Very Low'],"['Low', 'Moderate']",['Low'],"['Sandy', 'Calcareous']"
