@@ -1,7 +1,4 @@
-# =======================
-# ## Plant Pydantic
-# =======================
-from typing import List
+from typing import Annotated, List, Optional
 from pydantic import BaseModel, Field
 import enum
 
@@ -37,3 +34,16 @@ class Plant(BaseModel):
     humidity:    List[ClimateCategory]    = Field(..., description="Humidity tolerance categories")
     precip:      List[ClimateCategory]    = Field(..., description="Precipitation tolerance categories")
     soil:        List[SoilType]           = Field(..., description="Preferred soil types")
+
+
+class RecommendationRequest(BaseModel):
+    lat:   Annotated[float, Field(ge=-90,  le=90,  description="Latitude in degrees")]
+    lon:   Annotated[float, Field(ge=-180, le=180, description="Longitude in degrees")]
+    month: Annotated[Optional[int], Field(ge=1, le=12,
+            description="Month number 1-12; if omitted, the current month is used.")] = None
+    limit: Annotated[int, Field(ge=1, le=100,
+            description="Maximum number of plants to return")] = 10
+
+
+class RecommendationResponse(BaseModel):
+    recommendations: List[Plant]

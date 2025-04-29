@@ -15,6 +15,7 @@ Create a `.env` file based on `.env.example`:
 
 ```plaintext
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+OPEN_WEATHER_API_KEY=YOUR_OPEN_WEATHER_API_KEY
 ```
 
 ### 3. Install Dependencies
@@ -28,8 +29,8 @@ pip install -r requirements.txt
 ### 4. Run
 
 ```bash
-uvicorn main:app --reload
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 # Access the FastAPI Application
-# http://127.0.0.1:8000/
+# http://localhost:8000
 ```
