@@ -28,5 +28,8 @@ pip install -r requirements.txt
 ### 4. Run
 
 ```bash
-python main.py dev
+uvicorn main:app --reload
+
+# Access the FastAPI Application
+# http://127.0.0.1:8000/
 ```
