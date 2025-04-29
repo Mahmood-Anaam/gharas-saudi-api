@@ -14,7 +14,7 @@ cd gharas-saudi-api
 Create a `.env` file based on `.env.example`:
 
 ```plaintext
-
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 ### 3. Install Dependencies
