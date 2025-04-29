@@ -1,83 +1,48 @@
 """
 app/weather.py
 --------------
-OpenWeather One-Call time-machine helper.
+Current weather helper (free tier) via:
+https://api.openweathermap.org/data/2.5/weather
 """
 
 from __future__ import annotations
 
-import datetime as dt
 import os
-from typing import Tuple, Optional
+from typing import Tuple
 
 import httpx
 
 OPEN_WEATHER_KEY = os.getenv("OPEN_WEATHER_API_KEY")
-ONECALL_URL = "https://api.openweathermap.org/data/3.0/onecall/timemachine"
+CURRENT_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 if not OPEN_WEATHER_KEY:
     raise RuntimeError("OPEN_WEATHER_API_KEY missing in environment")
 
 
-async def _daily_means(lat: float, lon: float, day: dt.date) -> Tuple[float, float, float]:
-    """Fetch one day’s hourly data → (mean_T °C, mean_H %, sum_precip mm)."""
-    unix_noon = int(dt.datetime.combine(day, dt.time(12)).timestamp())
+async def fetch_current_means(lat: float, lon: float) -> Tuple[float, float, float]:
+    """
+    Return (temp_C, humidity_pct, precip_mm_last_hour) using the free /weather endpoint.
+    """
     params = {
         "lat": lat,
         "lon": lon,
-        "dt": unix_noon,
         "units": "metric",
         "appid": OPEN_WEATHER_KEY,
     }
-    async with httpx.AsyncClient(timeout=15) as client:
-        res = await client.get(ONECALL_URL, params=params)
+
+    async with httpx.AsyncClient(timeout=10) as client:
+        res = await client.get(CURRENT_URL, params=params)
         res.raise_for_status()
         data = res.json()
 
-    hourly = data.get("hourly", [])
-    temps = [h["temp"] for h in hourly]
-    hums  = [h["humidity"] for h in hourly]
-    precs = [
-        h.get("rain", {}).get("1h", 0.0) + h.get("snow", {}).get("1h", 0.0)
-        for h in hourly
-    ]
-    return sum(temps) / len(temps), sum(hums) / len(hums), sum(precs)
+    temp_c  = data["main"]["temp"]
+    hum_pct = data["main"]["humidity"]
 
+    precip_mm = 0.0
+    # rain.1h or snow.1h may be absent
+    if "rain" in data and "1h" in data["rain"]:
+        precip_mm += data["rain"]["1h"]
+    if "snow" in data and "1h" in data["snow"]:
+        precip_mm += data["snow"]["1h"]
 
-async def fetch_monthly_means(
-    lat: float,
-    lon: float,
-    month: Optional[int] = None,
-) -> Tuple[float, float, float]:
-    """
-    Return (mean_T °C, mean_H %, mean_precip mm/day) for last 30 days or a calendar month.
-    """
-    today = dt.date.today()
-
-    if month is None:
-        end_date = today
-        start_date = end_date - dt.timedelta(days=29)
-    else:
-        year = today.year
-        start_date = dt.date(year, month, 1)
-        end_date = (start_date.replace(day=28) + dt.timedelta(days=4)).replace(day=1) - dt.timedelta(days=1)
-
-    tot_T = tot_H = tot_P = 0.0
-    days = 0
-    delta_days = (end_date - start_date).days + 1
-
-    for d in range(delta_days):
-        day = start_date + dt.timedelta(days=d)
-        try:
-            t, h, p = await _daily_means(lat, lon, day)
-        except Exception:
-            continue
-        tot_T += t
-        tot_H += h
-        tot_P += p
-        days += 1
-
-    if days == 0:
-        raise ValueError("Weather API returned no usable data")
-
-    return tot_T / days, tot_H / days, tot_P / days
+    return temp_c, hum_pct, precip_mm

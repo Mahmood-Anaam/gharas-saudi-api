@@ -18,7 +18,7 @@ from .models import (
     RecommendationResponse,
 )
 from .helper import load_plants, plant_vector, site_vector
-# from .weather import fetch_monthly_means
+from .weather import fetch_current_means  
 
 # ---------- Load dataset ----------
 DATA_PATH = Path(__file__).parent / "data" / "plants_dataset.json"
@@ -35,7 +35,7 @@ KNN = NearestNeighbors(
 # ---------- Public helper ----------
 async def recommend(req: RecommendationRequest) -> RecommendationResponse:
     """Return `limit` nearest plants (climate only)."""
-    mean_T, mean_H, mean_P = 24.0,40.0,1.0 #await fetch_monthly_means(req.lat, req.lon, req.month)
+    mean_T, mean_H, mean_P = await fetch_current_means(req.lat, req.lon)
     query_vec = np.array([site_vector(mean_T, mean_H, mean_P)], dtype="float32")
 
     distances, indices = KNN.kneighbors(query_vec, n_neighbors=req.limit)
