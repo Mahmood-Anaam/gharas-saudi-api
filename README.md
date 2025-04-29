@@ -6,7 +6,6 @@ thrive in the current climate of any Saudi‐Arabian location.
 * **Dataset** 160 plants extracted from the *Riyadh Plants Manual*  
 * **Algorithm** k-Nearest-Neighbors (climate only: temperature, humidity, rain)  
 * **Weather source** OpenWeather **/data/2.5/weather** (free tier)  
-* **Runtime** Python 3.11+
 
 
 ## Endpoints
