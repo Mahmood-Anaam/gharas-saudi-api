@@ -35,6 +35,12 @@ class Plant(BaseModel):
     precip:      List[ClimateCategory]    = Field(..., description="Precipitation tolerance categories")
     soil:        List[SoilType]           = Field(..., description="Preferred soil types")
 
+class Weather(BaseModel):
+    temp: float = Field(...,description="Temperature in Celsius")
+    humidity: float = Field(...,description="Humidity percentage (0-100)")
+    region: str = Field(..., description="Name of the region/location")
+    soil: SoilType = Field(..., description="Predominant soil type")
+    
 
 class RecommendationRequest(BaseModel):
     lat:   Annotated[float, Field(ge=-90,  le=90,  description="Latitude in degrees")]
@@ -47,3 +53,4 @@ class RecommendationRequest(BaseModel):
 
 class RecommendationResponse(BaseModel):
     recommendations: List[Plant]
+    weather: Weather
