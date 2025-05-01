@@ -36,7 +36,6 @@ async def health():
     return {"status": "ok"}
 
 
-
 @app.post("/generate-plant-image")
 async def generate_plant_image(plant_name: str):
     try:
@@ -65,6 +64,54 @@ async def generate_plant_image(plant_name: str):
 
 # ................................................
 
+@app.post("/generate-plant-simulation")
+async def generate_plant_simulation(
+    plant_image: UploadFile = File(...),
+    plant_name: str = "cactus",
+    environment_image: UploadFile = File(...),
+    ):
+    
+    try:
+        plant_img = Image.open(io.BytesIO(await plant_image.read()))
+        env_img = Image.open(io.BytesIO(await environment_image.read()))
+        prompt = plant_simulation_prompt.format(plant_name=plant_name)
+        
+        response = client.models.generate_content(
+            model="gemini-2.0-flash-exp-image-generation",
+            contents=[prompt, plant_img, env_img],
+            config=types.GenerateContentConfig(
+                response_modalities=['TEXT', 'IMAGE']
+            )
+            )
+        
+        for part in response.candidates[0].content.parts:
+            if part.inline_data is not None:
+                image_data = part.inline_data.data
+                return JSONResponse(content={
+                    "status": "success",
+                    "image": f"data:image/png;base64,{base64.b64encode(image_data).decode('utf-8')}"
+                })
+
+        raise HTTPException(status_code=500, detail="No image generated")
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ................................................
 
 @app.post("/recommend", response_model=RecommendationResponse)
 async def recommend_endpoint(req: RecommendationRequest):
