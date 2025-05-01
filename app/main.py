@@ -7,8 +7,10 @@ FastAPI entry-point with two endpoints:
 """
 
 from io import BytesIO
-from fastapi import FastAPI, HTTPException
+import os
+from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from google import genai
 from google.genai import types
 from .models import RecommendationRequest, RecommendationResponse
