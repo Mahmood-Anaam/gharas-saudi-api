@@ -46,7 +46,9 @@ async def generate_plant_image(plant_name: str):
             model="gemini-2.0-flash-exp-image-generation",
             contents=[prompt],
             config=types.GenerateContentConfig(
-                response_modalities=['TEXT', 'IMAGE']
+                response_modalities=['TEXT', 'IMAGE'],
+                temperature=0,
+                seed=42
             )
         )
 
@@ -82,7 +84,9 @@ async def generate_plant_simulation(
             model="gemini-2.0-flash-exp-image-generation",
             contents=[prompt, plant_img, env_img],
             config=types.GenerateContentConfig(
-                response_modalities=['TEXT', 'IMAGE']
+                response_modalities=['TEXT', 'IMAGE'],
+                temperature=0,
+                seed=42
             )
             )
         
