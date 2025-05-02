@@ -24,11 +24,11 @@ plant_simulation_prompt = """
         """.strip()
 
 
-def resize_image(image_data: bytes, max_size: tuple = (200, 200)) -> bytes:
+def resize_image(image_data: bytes, max_size: tuple = (300, 300)) -> bytes:
     img = Image.open(io.BytesIO(image_data))
     img.thumbnail(max_size, Image.Resampling.LANCZOS)
     output = io.BytesIO()
-    img.save(output, format='PNG', optimize=True, quality=85)
+    # img.save(output, format='PNG', optimize=True, quality=85)
     return output.getvalue()
 
 
