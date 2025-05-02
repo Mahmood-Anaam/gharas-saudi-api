@@ -9,6 +9,7 @@ Generate a high-quality, photorealistic image of a {plant_name} plant with the f
     - Professional studio lighting
     - Isolated on transparent background
     - 4K resolution
+    - 300x300 pixels
     - Detailed textures and accurate colors
     - Perfect for agricultural or gardening app
     """.strip()

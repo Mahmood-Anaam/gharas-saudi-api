@@ -53,7 +53,7 @@ async def generate_plant_image(plant_name: str):
         for part in response.candidates[0].content.parts:
             if part.inline_data is not None:
                 image_data = part.inline_data.data
-                image_data = resize_image(image_data)
+                # image_data = resize_image(image_data)
                 return JSONResponse(content={
                     "status": "success",
                     "image": f"data:image/png;base64,{base64.b64encode(image_data).decode('utf-8')}"
