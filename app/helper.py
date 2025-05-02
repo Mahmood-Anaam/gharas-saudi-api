@@ -1,17 +1,8 @@
-"""
-app/helper.py
--------------
-Generic helpers shared by other modules (encoding + data loading).
-"""
-
 from __future__ import annotations
-
 import json
 from pathlib import Path
 from typing import List
-
 import numpy as np
-
 from .models import Plant, ClimateCategory, PlantType, SoilType
 
 # ---------- Level map: ClimateCategory -> int 0-4 ----------

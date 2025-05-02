@@ -1,17 +1,8 @@
-"""
-app/recommender.py
-------------------
-k-Nearest-Neighbor recommender (k = `limit`). Soil is NOT used.
-"""
-
 from __future__ import annotations
-
 from pathlib import Path
 from typing import List
-
 import numpy as np
 from sklearn.neighbors import NearestNeighbors
-
 from .models import (
     Plant,
     RecommendationRequest,

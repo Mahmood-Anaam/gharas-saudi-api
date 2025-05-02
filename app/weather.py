@@ -1,21 +1,7 @@
-"""
-app/weather.py
---------------
-Current weather helper (free tier) via:
-https://api.openweathermap.org/data/2.5/weather
-
-"""
-
-
-
-
 from __future__ import annotations
-
 import os
 from typing import Tuple
-
 import httpx
-
 from app.models import SoilType, Weather
 
 OPEN_WEATHER_KEY = os.getenv("OPEN_WEATHER_API_KEY")
