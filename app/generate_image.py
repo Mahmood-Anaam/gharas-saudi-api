@@ -9,7 +9,6 @@ Generate a high-quality, photorealistic image of a {plant_name} plant with the f
     - Professional studio lighting
     - Isolated on transparent background
     - 4K resolution
-    - 300x300 pixels
     - Detailed textures and accurate colors
     - Perfect for agricultural or gardening app
     """.strip()
@@ -29,7 +28,7 @@ def resize_image(image_data: bytes, max_size: tuple = (300, 300)) -> bytes:
     img = Image.open(io.BytesIO(image_data))
     img.thumbnail(max_size, Image.Resampling.LANCZOS)
     output = io.BytesIO()
-    # img.save(output, format='PNG', optimize=True, quality=85)
+    img.save(output, format='PNG')
     return output.getvalue()
 
 
