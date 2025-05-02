@@ -40,10 +40,11 @@ async def fetch_weather(lat: float, lon: float):
             res.raise_for_status()
             data = res.json()
         soil_type = await determine_soil_type(lat, lon)
+        name = data['name'] if data['name'] else data['sys']['country']
         return Weather(
             temp=data['main']['temp'],
             humidity=data['main']['humidity'],
-            region=data['name'],
+            region=name,
             soil=soil_type
         )
     except Exception as e:
