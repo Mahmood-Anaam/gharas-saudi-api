@@ -1,12 +1,3 @@
-"""
-app/main.py
------------
-FastAPI entry-point with two endpoints:
-  • GET  /health      → simple heartbeat
-  • POST /recommend   → list of suitable plants
-"""
-
-from io import BytesIO
 import os
 from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
@@ -17,7 +8,6 @@ from .models import RecommendationRequest, RecommendationResponse
 from .recommender import recommend
 from .generate_image import *
 from PIL import Image
-from io import BytesIO
 import base64
 
 
@@ -103,20 +93,6 @@ async def generate_plant_simulation(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # ................................................
 
 @app.post("/recommend", response_model=RecommendationResponse)
