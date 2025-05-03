@@ -32,7 +32,7 @@ class Plant(BaseModel):
     type:        PlantType                = Field(..., description="Growth form of the plant")
     temperature: List[ClimateCategory]    = Field(..., description="Temperature tolerance categories")
     humidity:    List[ClimateCategory]    = Field(..., description="Humidity tolerance categories")
-    precip:      List[ClimateCategory]    = Field(..., description="Precipitation tolerance categories")
+    # precip:      List[ClimateCategory]    = Field(..., description="Precipitation tolerance categories")
     soil:        List[SoilType]           = Field(..., description="Preferred soil types")
 
 class Weather(BaseModel):

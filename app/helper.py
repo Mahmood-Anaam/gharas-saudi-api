@@ -20,7 +20,6 @@ def plant_vector(plant: Plant) -> list[float]:
     return [
         _LEVEL[plant.temperature[0].value],
         _LEVEL[plant.humidity[0].value],
-        _LEVEL[plant.precip[0].value],
     ]
 
 
@@ -28,8 +27,7 @@ def site_vector(mean_T: float, mean_H: float, mean_P: float) -> list[float]:
     """Map numeric climate means into the same 0-4 space."""
     temp_lvl = np.clip(np.interp(mean_T, [-10, 12, 24, 34, 42], [0, 1, 2, 3, 4]), 0, 4)
     hum_lvl  = np.clip(np.interp(mean_H, [0, 25, 40, 60, 80],  [0, 1, 2, 3, 4]), 0, 4)
-    prec_lvl = np.clip(np.interp(mean_P, [0, 0.033, 1, 2, 4],   [0, 1, 2, 3, 4]), 0, 4)
-    return [temp_lvl, hum_lvl, prec_lvl]
+    return [temp_lvl, hum_lvl]
 
 
 # ---------- Dataset loader ----------
@@ -46,7 +44,6 @@ def load_plants(json_path: Path) -> List[Plant]:
                 type=PlantType(rec["type"]),
                 temperature=[ClimateCategory(cat) for cat in rec["temperature"]],
                 humidity=[ClimateCategory(cat) for cat in rec["humidity"]],
-                precip=[ClimateCategory(cat) for cat in rec["precip"]],
                 soil=[SoilType(cat) for cat in rec["soil"]],
             )
         )

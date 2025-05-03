@@ -70,11 +70,6 @@ async def fetch_current_means(lat: float, lon: float) -> Tuple[float, float, flo
     temp_c  = data["main"]["temp"]
     hum_pct = data["main"]["humidity"]
 
-    precip_mm = 0.0
-    # rain.1h or snow.1h may be absent
-    if "rain" in data and "1h" in data["rain"]:
-        precip_mm += data["rain"]["1h"]
-    if "snow" in data and "1h" in data["snow"]:
-        precip_mm += data["snow"]["1h"]
 
-    return temp_c, hum_pct, precip_mm
+
+    return temp_c, hum_pct

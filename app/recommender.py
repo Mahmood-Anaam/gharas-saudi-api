@@ -26,9 +26,9 @@ KNN = NearestNeighbors(
 # ---------- Public helper ----------
 async def recommend(req: RecommendationRequest) -> RecommendationResponse:
     """Return `limit` nearest plants (climate only)."""
-    mean_T, mean_H, mean_P = await fetch_current_means(req.lat, req.lon)
+    mean_T, mean_H = await fetch_current_means(req.lat, req.lon)
     weather = await fetch_weather(req.lat,req.lon)
-    query_vec = np.array([site_vector(mean_T, mean_H, mean_P)], dtype="float32")
+    query_vec = np.array([site_vector(mean_T, mean_H)], dtype="float32")
 
     distances, indices = KNN.kneighbors(query_vec, n_neighbors=req.limit)
     recommendations = [PLANTS[i] for i in indices[0]]
