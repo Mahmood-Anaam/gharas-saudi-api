@@ -61,7 +61,6 @@ async def generate_plant_image(plant_name: str):
 @app.post("/generate-plant-simulation")
 async def generate_plant_simulation(
     plant_image: UploadFile = File(...),
-    plant_name: str = "cactus",
     environment_image: UploadFile = File(...),
     ):
     
