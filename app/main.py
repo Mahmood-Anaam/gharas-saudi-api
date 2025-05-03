@@ -68,22 +68,22 @@ async def generate_plant_simulation(
     try:
         plant_img = Image.open(io.BytesIO(await plant_image.read()))
         env_img = Image.open(io.BytesIO(await environment_image.read()))
-        prompt = plant_simulation_prompt.format(plant_name=plant_name)
-        
+        prompt = plant_simulation_prompt
+
         response = client.models.generate_content(
             model="gemini-2.0-flash-exp-image-generation",
             contents=[prompt, plant_img, env_img],
             config=types.GenerateContentConfig(
                 response_modalities=['TEXT', 'IMAGE'],
-                temperature=0,
-                seed=42
+                # temperature=0,
+                # seed=42
             )
             )
         
         for part in response.candidates[0].content.parts:
             if part.inline_data is not None:
                 image_data = part.inline_data.data
-                image_data = resize_image(image_data,max_size=(600,600))
+                image_data = resize_image(image_data,max_size=(400,400))
                 return JSONResponse(content={
                     "status": "success",
                     "image": f"data:image/png;base64,{base64.b64encode(image_data).decode('utf-8')}"
