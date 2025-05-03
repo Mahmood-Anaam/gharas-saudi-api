@@ -23,7 +23,7 @@ def plant_vector(plant: Plant) -> list[float]:
     ]
 
 
-def site_vector(mean_T: float, mean_H: float, mean_P: float) -> list[float]:
+def site_vector(mean_T: float, mean_H: float) -> list[float]:
     """Map numeric climate means into the same 0-4 space."""
     temp_lvl = np.clip(np.interp(mean_T, [-10, 12, 24, 34, 42], [0, 1, 2, 3, 4]), 0, 4)
     hum_lvl  = np.clip(np.interp(mean_H, [0, 25, 40, 60, 80],  [0, 1, 2, 3, 4]), 0, 4)
