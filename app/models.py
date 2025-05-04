@@ -2,6 +2,7 @@ from typing import Annotated, List, Optional
 from pydantic import BaseModel, Field
 import enum
 
+
 class ClimateCategory(str, enum.Enum):
     VERY_LOW  = "Very Low"
     LOW       = "Low"
